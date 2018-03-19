@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_ef6af6117a83445aa340f02fc494dd4e {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ef6af6117a83445aa340f02fc494dd4e" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_ef6af6117a83445aa340f02fc494dd4e = L.map(
+                                  'map_ef6af6117a83445aa340f02fc494dd4e',
+                                  {center: [52.1326,5.29131],
+                                  zoom: 6,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_68824f81949c4f2fab66c6592dcc53e7 = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_ef6af6117a83445aa340f02fc494dd4e);
+        
+    
+            var feature_group_8612f7feeb6f43018c07da293e412e26 = L.featureGroup(
+                ).addTo(map_ef6af6117a83445aa340f02fc494dd4e);
+        
+    
+
+            var marker_8477e860e47a44b2baf60ece0f0c3fa0 = L.marker(
+                [52.3702,4.8952],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8612f7feeb6f43018c07da293e412e26);
+            
+    
+
+                var icon_b1cd708746fc4e8dafbdc81b3ab66bb3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8477e860e47a44b2baf60ece0f0c3fa0.setIcon(icon_b1cd708746fc4e8dafbdc81b3ab66bb3);
+            
+    
+            var popup_f2acbc2d97364612b08455d40a9165df = L.popup({maxWidth: '300'});
+
+            
+                var html_aff3fc94fde9484c94264fb513fc52fe = $('<div id="html_aff3fc94fde9484c94264fb513fc52fe" style="width: 100.0%; height: 100.0%;">Hello This is Amsterdam!</div>')[0];
+                popup_f2acbc2d97364612b08455d40a9165df.setContent(html_aff3fc94fde9484c94264fb513fc52fe);
+            
+
+            marker_8477e860e47a44b2baf60ece0f0c3fa0.bindPopup(popup_f2acbc2d97364612b08455d40a9165df);
+
+            
+        
+    
+
+            var marker_6f9e6745450447d2a8618fdf34970976 = L.marker(
+                [50.8514,5.691],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_8612f7feeb6f43018c07da293e412e26);
+            
+    
+
+                var icon_dd7438a00fdf4a9a96b94456e7ba98cf = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6f9e6745450447d2a8618fdf34970976.setIcon(icon_dd7438a00fdf4a9a96b94456e7ba98cf);
+            
+    
+            var popup_873ab2374d5144a1a8c0bbfa10791f01 = L.popup({maxWidth: '300'});
+
+            
+                var html_b3eb398cd233447c83a8ac3214eeb1c3 = $('<div id="html_b3eb398cd233447c83a8ac3214eeb1c3" style="width: 100.0%; height: 100.0%;">Hello This is Maastricht!</div>')[0];
+                popup_873ab2374d5144a1a8c0bbfa10791f01.setContent(html_b3eb398cd233447c83a8ac3214eeb1c3);
+            
+
+            marker_6f9e6745450447d2a8618fdf34970976.bindPopup(popup_873ab2374d5144a1a8c0bbfa10791f01);
+
+            
+        
+</script>
